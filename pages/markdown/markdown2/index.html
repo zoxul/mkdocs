@@ -1,0 +1,1123 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../markdown1/">
+      
+      
+        <link rel="next" href="../../mkdocs/mkdocs/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.22">
+    
+    
+      
+        <title>其他語法 - MarkDown & MkDocs 簡介</title>
+      
+    
+    
+
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.732c4fb1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github-gist.min.css">
+
+
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/print-site-enum-headings2.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-enum-headings3.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-enum-headings4.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-enum-headings5.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-enum-headings6.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site.css">
+    
+      <link rel="stylesheet" href="../../../css/print-site-material.css">
+    
+      <link rel="stylesheet" href="../../../style/extra.css">
+    
+      <link rel="stylesheet" href="../../../style/print.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="MarkDown &amp; MkDocs 簡介" class="md-header__button md-logo" aria-label="MarkDown & MkDocs 簡介" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MarkDown & MkDocs 簡介
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              其他語法
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  MarkDown
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../mkdocs/mkdocs/" class="md-tabs__link">
+        
+  
+    
+  
+  MkDocs
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="MarkDown &amp; MkDocs 簡介" class="md-nav__button md-logo" aria-label="MarkDown & MkDocs 簡介" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    MarkDown & MkDocs 簡介
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    MarkDown
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            MarkDown
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    簡介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基本語法
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    其他語法
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    其他語法
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      文字上色方式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      警告框
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      選項卡
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      checkbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mermaid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mermaid使用方式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      表格使用方式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#icon" class="md-nav__link">
+    <span class="md-ellipsis">
+      待討論議題Icon
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mkdocs/mkdocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+<a href="../../../print_page/" title="Print Site" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 3H6v4h12m1 5a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1m-3 7H8v-5h8m3-6H5a3 3 0 0 0-3 3v6h4v4h12v-4h4v-6a3 3 0 0 0-3-3Z"/></svg>
+</a>
+
+
+                  
+
+
+<h1 id="_1">其他語法</h1>
+<h3 id="_2">文字上色方式</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">效果</th>
+<th style="text-align: left;">語法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><ins class="critic">新增</ins></td>
+<td style="text-align: left;">{<code>++新增++</code>}</td>
+</tr>
+<tr>
+<td style="text-align: left;"><del class="critic">刪除</del></td>
+<td style="text-align: left;">{<code>--刪除--</code>}</td>
+</tr>
+<tr>
+<td style="text-align: left;"><del class="critic"> 替換舊 </del><ins class="critic"> 替換新 </ins></td>
+<td style="text-align: left;">{<code>~~ 替換舊 ~&gt; 替換新 ~~</code>}</td>
+</tr>
+<tr>
+<td style="text-align: left;"><mark class="critic"> 強調 </mark></td>
+<td style="text-align: left;">{<code>== 強調 ==}</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><em>雙框</em></td>
+<td style="text-align: left;"><code>*雙框*</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>粗體</strong></td>
+<td style="text-align: left;"><code>**粗體**</code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>為使用雙框，此文檔不能使用斜體  </p>
+</div>
+<h3 id="_3">警告框</h3>
+<p>用法  </p>
+<div class="highlight"><pre><span></span><code>!!! warning
+    為使用雙框，此文檔不能使用斜體
+</code></pre></div>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>以<code>???</code>開頭可以將區塊變成可折疊
+<div class="highlight"><pre><span></span><code>??? note
+    可折疊
+</code></pre></div></p>
+<details class="note">
+<summary>Note</summary>
+<p>可折疊</p>
+</details>
+<p><code>???</code>+預設展開
+<div class="highlight"><pre><span></span><code>???+ note
+    預設展開
+</code></pre></div></p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>預設展開</p>
+</details>
+</details>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>內文需要縮排</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">增加標題方式</p>
+<p><div class="highlight"><pre><span></span><code>!!! abstract &quot;增加標題方式&quot;
+</code></pre></div>
+如果不想顯示標題可以使用空字串即可
+<div class="highlight"><pre><span></span><code>!!! abstract &quot;&quot;
+    不要標題
+</code></pre></div></p>
+<div class="admonition abstract">
+<p>不要標題</p>
+</div>
+</div>
+<details class="info">
+<summary>其他提示框</summary>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+</div>
+</details>
+<h3 id="_4">選項卡</h3>
+<div class="highlight"><pre><span></span><code>=== &quot;步驟一&quot;
+    -   內文一  
+=== &quot;步驟二&quot;
+    -   內文二
+=== &quot;注意事項 &quot;
+    -   內文需要縮排
+=== &quot;使用時機&quot;
+    -   如果有文件需要寫步驟可使用
+</code></pre></div>
+<p><strong>效果</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">步驟一</label><label for="__tabbed_1_2">步驟二</label><label for="__tabbed_1_3">注意事項 </label><label for="__tabbed_1_4">使用時機</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>內文一  </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>內文二</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>內文需要縮排</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>如果有文件需要寫步驟可使用    </li>
+</ul>
+</div>
+</div>
+</div>
+<hr />
+<h3 id="checkbox">checkbox</h3>
+<div class="highlight"><pre><span></span><code>- [ ] 集保admin
+- [x] 集保主管
+- [x] 集保經辦
+- [ ] 集保理級
+- [ ] 申請單位代號 admin 
+- [ ] 申請單位代號主管
+- [ ] 申請單位代號經辦
+</code></pre></div>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 集保admin</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 集保主管</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 集保經辦</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 集保理級</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 申請單位代號 admin </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 申請單位代號主管</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 申請單位代號經辦</li>
+</ul>
+<h3 id="mermaid">Mermaid使用方式</h3>
+<p>使用<a href="https://mermaid.live/edit">Mermaid Live Edit</a>編輯mermaid  </p>
+<p><a class="glightbox" href="../images/mermaidlive.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="mermaidlive" src="../images/mermaidlive.png" /></a></p>
+<ul>
+<li><strong>status mermaid</strong>  <pre><code>```mermaid
+stateDiagram
+direction TB
+[*]--&gt; 插入卡片
+插入卡片 --&gt; 讀取PIN碼: 讀卡
+插入卡片 --&gt; 退出卡片: 無效的卡片
+讀取PIN碼 --&gt; 選擇交易項目: 有效的PIN碼
+讀取PIN碼 --&gt; 退出卡片:無效的PIN碼
+選擇交易項目 --&gt; 退出卡片: 取消交易
+選擇交易項目 --&gt; 執行交易: 交易選擇
+執行交易 --&gt; 選擇交易項目: 其他交易
+執行交易 --&gt; 退出卡片: 結束交易
+退出卡片 --&gt; [*]
+```
+</code></pre>
+</li>
+</ul>
+<pre class="mermaid"><code>stateDiagram
+direction TB
+[*]--&gt; 插入卡片
+插入卡片 --&gt; 讀取PIN碼: 讀卡
+插入卡片 --&gt; 退出卡片: 無效的卡片
+讀取PIN碼 --&gt; 選擇交易項目: 有效的PIN碼
+讀取PIN碼 --&gt; 退出卡片:無效的PIN碼
+選擇交易項目 --&gt; 退出卡片: 取消交易
+選擇交易項目 --&gt; 執行交易: 交易選擇
+執行交易 --&gt; 選擇交易項目: 其他交易
+執行交易 --&gt; 退出卡片: 結束交易
+退出卡片 --&gt; [*]</code></pre>
+<h3 id="_5">表格使用方式</h3>
+<p><a href="https://squidfunk.github.io/mkdocs-material/reference/data-tables/">表格使用方式參考</a></p>
+<div class="highlight"><pre><span></span><code>| 姓名   | 年齡   | 職業  |
+| :---- | :----: | ----: |
+| 置左   | 置中   | 置右  |
+| 張三   | 30    | 工程師 |
+| 李四   | 25    | 設計師 |
+| 王五   | 35    | 醫生   |
+</code></pre></div>
+<ul>
+<li>讀取excel表格</li>
+</ul>
+<dl>
+<dd><a href="https://timvink.github.io/mkdocs-table-reader-plugin/">excel表格參考</a></dd>
+</dl>
+<p><strong>語法</strong>:</p>
+<p><code>{{</code> read_csv('table/test.csv') <code>}}</code>  </p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">姓名</th>
+<th style="text-align: right;">年齡</th>
+<th style="text-align: left;">職業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">張三</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">工程師</td>
+</tr>
+<tr>
+<td style="text-align: left;">李四</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">設計師</td>
+</tr>
+<tr>
+<td style="text-align: left;">王五</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: left;">醫生</td>
+</tr>
+</tbody>
+</table>
+<p><code>{{</code> read_csv(('table/test.csv' ) , colalign=("left","center","right")) <code>}}</code></p>
+<hr />
+<div class="admonition info inline">
+<p class="admonition-title">對齊方式</p>
+<p>colalign=("left","center","right")  </p>
+<p><mark class="critic">有多個欄位想設定就填幾個</mark>  </p>
+<p><strong>不填寫預設文字靠左數字靠右</strong>  </p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">姓名</th>
+<th style="text-align: center;">年齡</th>
+<th style="text-align: right;">職業</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">張三</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: right;">工程師</td>
+</tr>
+<tr>
+<td style="text-align: left;">李四</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: right;">設計師</td>
+</tr>
+<tr>
+<td style="text-align: left;">王五</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: right;">醫生</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning inline">
+<p class="admonition-title">Warning</p>
+<p>為了方便製作表格，使用CSV格式。存檔時選擇<mark class="critic">CSV UTF-8(逗號分隔)</mark> 若不選擇此格式會亂碼</p>
+</div>
+<p><a class="glightbox" href="../images/csv-utf82.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../images/csv-utf82.png" /></a>  </p>
+<ul>
+<li><strong>在表格內要換行有兩種方式</strong></li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">使用 <code>&lt;br&gt;</code> </label><label for="__tabbed_2_2">在excel格子內換行</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li>使用br  </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">姓名</th>
+<th style="text-align: right;">年齡</th>
+<th style="text-align: left;">性別</th>
+<th style="text-align: left;">職業</th>
+<th style="text-align: left;">城市</th>
+<th style="text-align: left;">興趣</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">李小華</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">女</td>
+<td style="text-align: left;">設計師</td>
+<td style="text-align: left;">台中</td>
+<td style="text-align: left;">繪畫<br>登山<br>閱讀<br>音樂</td>
+</tr>
+<tr>
+<td style="text-align: left;">張麗麗</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">女</td>
+<td style="text-align: left;">學生</td>
+<td style="text-align: left;">台南</td>
+<td style="text-align: left;">閱讀<br>音樂<br>下棋<br>烹飪</td>
+</tr>
+<tr>
+<td style="text-align: left;">陳大偉</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">男</td>
+<td style="text-align: left;">醫生</td>
+<td style="text-align: left;">高雄</td>
+<td style="text-align: left;">下棋<br>瑜伽<br>烹飪</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<ul>
+<li>使用alt+enter(在excel格子內換行)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">姓名</th>
+<th style="text-align: right;">年齡</th>
+<th style="text-align: left;">性別</th>
+<th style="text-align: left;">職業</th>
+<th style="text-align: left;">城市</th>
+<th style="text-align: left;">興趣</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">李小華</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: left;">女</td>
+<td style="text-align: left;">設計師</td>
+<td style="text-align: left;">台中</td>
+<td style="text-align: left;">繪畫</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">登山</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">閱讀</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">烹飪</td>
+</tr>
+<tr>
+<td style="text-align: left;">張麗麗</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: left;">女</td>
+<td style="text-align: left;">學生</td>
+<td style="text-align: left;">台南</td>
+<td style="text-align: left;">閱讀</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">音樂</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">下棋</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">烹飪</td>
+</tr>
+<tr>
+<td style="text-align: left;">陳大偉</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: left;">男</td>
+<td style="text-align: left;">醫生</td>
+<td style="text-align: left;">高雄</td>
+<td style="text-align: left;">下棋</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">瑜伽</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">烹飪</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">使用與不使用差別</p>
+<p><strong>使用&lt; br&gt;標籤時在MD顯示會較為清楚，但在excel撰寫時可能會導致易讀性較差<br>
+在excel格子內換行的話撰寫易讀性較高，但在MD顯示會較不清楚。</strong></p>
+</div>
+<h3 id="icon">待討論議題Icon<span class="twemoji question"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.1 1 4.1 2.8 5.5 0 .6-.4 2.2-2.8 4.5 0 0 3.5 0 6.5-2.5 1.1.3 2.3.5 3.5.5 5.5 0 10-3.6 10-8s-4.5-8-10-8m1 12h-2v-2h2v2m1.8-5c-.3.4-.7.6-1.1.8-.3.2-.4.3-.5.5-.2.2-.2.4-.2.7h-2c0-.5.1-.8.3-1.1.2-.2.6-.5 1.1-.8.3-.1.5-.3.6-.5.1-.2.2-.5.2-.7 0-.3-.1-.5-.3-.7-.2-.2-.5-.3-.8-.3-.3 0-.5.1-.7.2-.2.1-.3.3-.3.6h-2c.1-.7.4-1.3.9-1.7.5-.4 1.2-.5 2.1-.5.9 0 1.7.2 2.2.6.5.4.8 1 .8 1.7.1.4 0 .8-.3 1.2Z"/></svg></span></h3>
+<p>在想要放置icon的地方使用<code>:material-chat-question:{ .question}</code>
+<div class="highlight"><pre><span></span><code>像這樣:material-chat-question:{ .question}
+</code></pre></div>
+像這樣<span class="twemoji question"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.1 1 4.1 2.8 5.5 0 .6-.4 2.2-2.8 4.5 0 0 3.5 0 6.5-2.5 1.1.3 2.3.5 3.5.5 5.5 0 10-3.6 10-8s-4.5-8-10-8m1 12h-2v-2h2v2m1.8-5c-.3.4-.7.6-1.1.8-.3.2-.4.3-.5.5-.2.2-.2.4-.2.7h-2c0-.5.1-.8.3-1.1.2-.2.6-.5 1.1-.8.3-.1.5-.3.6-.5.1-.2.2-.5.2-.7 0-.3-.1-.5-.3-.7-.2-.2-.5-.3-.8-.3-.3 0-.5.1-.7.2-.2.1-.3.3-.3.6h-2c.1-.7.4-1.3.9-1.7.5-.4 1.2-.5 2.1-.5.9 0 1.7.2 2.2.6.5.4.8 1 .8 1.7.1.4 0 .8-.3 1.2Z"/></svg></span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../markdown1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 基本語法">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                基本語法
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../mkdocs/mkdocs/" class="md-footer__link md-footer__link--next" aria-label="Next: MkDocs">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                MkDocs
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "content.code.copy", "content.code.annotate", "toc.integrate", "navigation.top", "navigation.footer", "search.highlight", "search.share"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+
+      <script src="../../../assets/javascripts/bundle.5cfa9459.min.js"></script>
+      
+        <script src="../../../js/print-site.js"></script>
+      
+        <script src="../../../script/extra.js"></script>
+      
+    
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
